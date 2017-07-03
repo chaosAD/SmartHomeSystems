@@ -13,7 +13,7 @@ struct GpsCoordinate {
   float y;   
 };
  
-void getGpsCoordinate(GpsCoordinate *gps);
+GpsCoordinate *getGpsCoordinate();
 ```
 Implement the main function of the SHM called `doSmartThings()`. The function calls the GPS function given to find out the location of the owner and do the smart things explained above. Assume the house is located at `x=200, y=5345`. The outside garage door is at `x=220, y=5300`. The center of the garage is `x=215, y=5300` (5m radius). And the center of the kitchen is `x=196, y=5400` (50m radius). 
 
